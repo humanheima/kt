@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     val name = "world!"
     println("hello,$name")
     println("hello,${args[0]}")
-    println("hello,${if (args.isNotEmpty()) args[0] else "someone"}")
+    println("hello,${if (args.isNotEmpty()) args[1] else "someone"}")
     println("\$name")
 }
 
