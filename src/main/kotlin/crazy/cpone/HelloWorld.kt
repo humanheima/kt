@@ -5,5 +5,5 @@ package crazy.cpone
  */
 
 fun main(args: Array<String>) {
-    println("Hello ,World!")
+    println("Hello ,World!你好")
 }
