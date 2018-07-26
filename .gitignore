@@ -16,3 +16,6 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 *.iml
 
+lib/
+out/
+src/main/kotlin/.DS_Store
