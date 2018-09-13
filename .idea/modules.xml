@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kt.iml" filepath="$PROJECT_DIR$/.idea/modules/kt.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kt_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kt_main.iml" group="kt" />
+      <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
     </modules>
   </component>
 </project>
