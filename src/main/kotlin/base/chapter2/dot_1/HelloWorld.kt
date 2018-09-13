@@ -8,9 +8,12 @@ fun main(args: Array<String>) {
     println(max(1, 2))
     val name = "world!"
     println("hello,$name")
-    println("hello,${args[0]}")
+//    println("hello,${args[0]}")
     println("hello,${if (args.isNotEmpty()) args[1] else "someone"}")
     println("\$name")
+
+    var anyValue  = null
+    print(anyValue.toString())
 }
 
 fun max(a: Int, b: Int): Int {

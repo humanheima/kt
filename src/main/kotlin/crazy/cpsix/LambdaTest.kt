@@ -2,7 +2,7 @@
 
 /**
  * Description:<br>
- * ÍøÕ¾: <a href="http://www.crazyit.org">·è¿ñJavaÁªÃË</a><br>
+ * ï¿½ï¿½Õ¾: <a href="http://www.crazyit.org">ï¿½ï¿½ï¿½Javaï¿½ï¿½ï¿½ï¿½</a><br>
  * Copyright (C), 2001-2018, Yeeku.H.Lee<br>
  * This program is protected by copyright laws.<br>
  * Program Name:<br>
@@ -10,17 +10,17 @@
  * @author Yeeku.H.Lee kongyeeku@163.com<br>
  * @version 1.0<br>
  */
-// ¶¨Òåº¯Êý£¬¸Ãº¯ÊýµÄ·µ»ØÖµÀàÐÍÎª(Int) -> Int
+// ï¿½ï¿½ï¿½åº¯ï¿½ï¿½ï¿½ï¿½ï¿½Ãºï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Îª(Int) -> Int
 fun getMathFuncLambda(type: String) : (Int) -> Int {
-	// ¸Ãº¯Êý·µ»ØµÄÊÇLambda±í´ïÊ½
+	// ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½Lambdaï¿½ï¿½ï¿½Ê½
 	when(type) {
-		"square" -> return {n: Int ->  // ¢Ù
+		"square" -> return {n: Int ->  // ï¿½ï¿½
 				n * n
 			}
-		"cube" -> return {n: Int ->  // ¢Ú
+		"cube" -> return {n: Int ->  // ï¿½ï¿½
 				n * n * n
 			}
-		else -> return {n: Int ->  // ¢Û
+		else -> return {n: Int ->  // ï¿½ï¿½
 				var result = 1
 				for ( index in 2..n ){
 					result *= index
@@ -30,11 +30,11 @@ fun getMathFuncLambda(type: String) : (Int) -> Int {
 	}
 }
 fun main(args: Array<String>) {
-	// µ÷ÓÃgetMathFunc()£¬³ÌÐò·µ»ØÒ»¸ö(Int)->IntÀàÐÍµÄº¯Êý
-	var mathFunc = getMathFuncLambda("cube") // µÃµ½cubeº¯Êý
-	println(mathFunc(5)) // Êä³ö125
-	mathFunc = getMathFuncLambda("square") // µÃµ½squareº¯Êý
-	println(mathFunc(5)) // Êä³ö25
-	mathFunc = getMathFuncLambda("other") // µÃµ½factorialº¯Êý
-	println(mathFunc(5)) // Êä³ö120
+	// ï¿½ï¿½ï¿½ï¿½getMathFunc()ï¿½ï¿½ï¿½ï¿½ï¿½ò·µ»ï¿½Ò»ï¿½ï¿½(Int)->Intï¿½ï¿½ï¿½ÍµÄºï¿½ï¿½ï¿½
+	var mathFunc = getMathFuncLambda("cube") // ï¿½Ãµï¿½cubeï¿½ï¿½ï¿½ï¿½
+	println(mathFunc(5)) // ï¿½ï¿½ï¿½125
+	mathFunc = getMathFuncLambda("square") // ï¿½Ãµï¿½squareï¿½ï¿½ï¿½ï¿½
+	println(mathFunc(5)) // ï¿½ï¿½ï¿½25
+	mathFunc = getMathFuncLambda("reference") // ï¿½Ãµï¿½factorialï¿½ï¿½ï¿½ï¿½
+	println(mathFunc(5)) // ï¿½ï¿½ï¿½120
 }
