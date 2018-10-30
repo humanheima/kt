@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
     val list = listOf("args:", *array)
     println(list)
 
-    val map = mapOf(1 to "one", 2 to "two", 3.to("three"))
+    val map = mapOf(1 to "one", 2 to "two", 3 to "three")
 
     val (number, name) = 1 to "one"
     println("number=$number,name=$name")
