@@ -23,13 +23,18 @@ data class Person2(val name: String) {
 
     companion object : Factory<Person2> {
 
-        override fun fromJson(jsonText: String): Person2 = Person2("factory")
+        override fun fromJson(jsonText: String): Person2 = Person2(jsonText)
     }
 
+}
+
+fun <T> loadFromJson(factory: Factory<T>): T {
+    return factory.fromJson("human")
 }
 
 fun main(args: Array<String>) {
     println(Person1.fromJson("Alice"))
     println(Person2.fromJson("hhah"))
+    print(loadFromJson(Person2))
 }
 
