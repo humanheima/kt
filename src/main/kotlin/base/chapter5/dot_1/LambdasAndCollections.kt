@@ -24,4 +24,5 @@ fun main(args: Array<String>) {
     println(people.maxBy { person: Person -> person.age })
     println(people.maxBy { person -> person.age })
     println(people.maxBy { it.age })
+    println(people.maxBy(Person::age))
 }
